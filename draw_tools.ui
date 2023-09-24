@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrameDrawButtons</class>
+ <widget class="QWidget" name="FrameDrawButtons">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>565</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPushButton" name="BtnDrawRect">
+     <property name="text">
+      <string>DrawRect</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="BtnDrawArrow">
+     <property name="text">
+      <string>Draw Arrow</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>BtnDrawRect</sender>
+   <signal>clicked()</signal>
+   <receiver>FrameDrawButtons</receiver>
+   <slot>BtnClickedDrawRect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>60</x>
+     <y>204</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnDrawArrow</sender>
+   <signal>clicked()</signal>
+   <receiver>FrameDrawButtons</receiver>
+   <slot>BtnClickedDrawArrow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>328</x>
+     <y>23</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BtnClickedDrawRect()</slot>
+  <slot>BtnClickedDrawArrow()</slot>
+ </slots>
+</ui>
